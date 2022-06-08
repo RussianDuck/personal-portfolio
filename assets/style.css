@@ -1,0 +1,199 @@
+
+body {
+    background-color: rgb(248, 246, 255);
+    margin: 0px;
+}
+
+/* Top navigation bar */
+.topnav {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    color: #f2f2f2;
+    padding: 20px 20px;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/962/809/original/abstract-gradient-background-with-colorful-and-modern-style-vector.jpg);
+    /* background-image: linear-gradient(to right bottom, rgb(58, 126, 204), rgb(60, 60, 211) ); */
+    background-size: cover;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Links within navigation bar */
+  .topnav li{
+      padding: 20px 20px;
+      display:inline;
+      display:inline-block;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* Decorations of the name "Brycen Duckworth" at the top of the page */
+.name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    float: center;
+    color: #f2f2f2;
+}
+
+  /* Links inside the navigation bar */
+  .topnav a {
+    /* float: left; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  /* Decorations of the headers */
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* This is the container for the profile picture and about me text*/
+.about-me-elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me-text {
+  width: 50%;
+}
+
+/* Effects for profile picture */
+.profile-pic {
+    height: 400px;
+    width: 300px;
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px lightslategray;
+    /* float: left; */
+}
+
+p {
+    text-align: left;
+}
+
+/* Borders/effects around the pictures */
+.card {
+  background-color: rgb(46, 46, 46);
+  box-shadow: 5px 5px 5px lightslategray;
+  flex: 1 1 0;
+  opacity: .5;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border-width: 1px;
+  border-radius: 10px;
+  max-width: 400px;
+  position: relative;
+}
+
+/* These are the effects when you hover over the picture */
+.card:hover {
+  opacity: 1.0;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+/* Manages size of pictures */
+.card img {
+  min-height: 100%;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.flexPictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.flexPictures .AJR {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.other-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 1.0;
+}
+
+/* This puts text in the corner of the image */
+.bottomLeft {
+  opacity: 1.0;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+  color:white
+}
+
+/* This contains the contact info at the bottom */
+.contactFooter {
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+  list-style-type: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* This makes the contact info at the bottom display in a horizontal line */
+.contactFooter li{
+  display:inline;
+  display:inline-block;
+  margin: 20px;
+}
+
+/* This underlines the individual contact info elements */
+.footerDecoration{
+  text-decoration: underline rgb(97, 97, 112);
+  text-underline-offset: 5px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-elements {
+    flex-direction: column;
+  }
+  .about-me-text {
+    width: 100%;
+  }
+}
